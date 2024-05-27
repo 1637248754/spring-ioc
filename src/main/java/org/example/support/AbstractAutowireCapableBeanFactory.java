@@ -8,7 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory {
 
     // 实例化策略，默认使用CGLIB子类化实例化策略
-    private InstantiationStrategy instantiationStrategy = new SimpleInstantiationStrategy();
+    private final InstantiationStrategy instantiationStrategy = new SimpleInstantiationStrategy();
 
     @Override
     // 根据给定的BeanDefinition创建Bean实例
