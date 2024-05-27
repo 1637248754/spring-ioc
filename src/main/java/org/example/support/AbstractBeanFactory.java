@@ -3,6 +3,9 @@ package org.example.support;
 import org.example.inter.BeanFactory;
 import org.example.exception.BeansException;
 
+/**
+ * 抽象BeanFactory
+ */
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
 
     @Override

@@ -5,6 +5,10 @@ import org.example.inter.InstantiationStrategy;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
+/**
+ * 可自动装配的Bean工厂抽象类
+ * 该类实现了BeanFactory接口，提供了根据BeanDefinition创建Bean实例的方法
+ */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory {
 
     // 实例化策略，默认使用CGLIB子类化实例化策略
