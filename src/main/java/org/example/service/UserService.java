@@ -1,7 +1,14 @@
 package org.example.service;
 
+import org.example.dto.UserDto;
+
 public class UserService {
-    private final String uid;
+    private String uid;
+
+    private UserDto userDto;
+
+    public UserService() {
+    }
 
     public UserService(String uid) {
         this.uid = uid;
@@ -14,5 +21,17 @@ public class UserService {
 
     public String getUid() {
         return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+    public UserDto getUserDto() {
+        return userDto;
+    }
+
+    public void setUserDto(UserDto userDto) {
+        this.userDto = userDto;
     }
 }
